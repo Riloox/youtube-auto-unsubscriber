@@ -1,28 +1,3 @@
-### `README.md`
-
-```markdown
-# Script de Anulación Masiva de Suscripciones en YouTube
-
-Este script en JavaScript permite anular suscripciones de manera masiva en YouTube mediante la manipulación del DOM en el navegador. Es ideal para limpiar tu lista de suscripciones de forma rápida y eficiente.
-
-## 🚀 Características
-
-- Anula suscripciones de canales de YouTube de manera automatizada.
-- Registra el progreso, incluyendo los canales procesados, los éxitos y los fallos.
-- Añade retrasos entre acciones para evitar conflictos con la interfaz de YouTube.
-
-## 🛠 Requisitos
-
-- Un navegador web compatible con la ejecución de scripts en la consola del desarrollador.
-- Acceso a tu cuenta de YouTube en el navegador.
-
-## 📋 Instrucciones de Uso
-
-1. Abre YouTube en tu navegador y accede a la página de suscripciones de canales.
-2. Presiona `F12` o `Ctrl+Shift+I` (Windows/Linux) o `Cmd+Option+I` (Mac) para abrir las herramientas de desarrollador.
-3. Ve a la pestaña **Consola**.
-4. Copia y pega el código del script en la consola.
-```
 async function unsubscribeFromChannel(channelRow) {
     try {
         // Find the subscribe button within this channel's row
@@ -103,24 +78,3 @@ async function massUnsubscribe() {
 // Start the unsubscription process
 console.log('Iniciando proceso de anulación masiva de suscripciones...');
 massUnsubscribe().catch(error => console.error('Error fatal:', error));
-```
-
-5. Presiona `Enter` para iniciar el proceso.
-
-El script buscará automáticamente todos los canales en la página y anulará suscripciones de manera secuencial.
-
-## 📌 Notas
-
-- **Retrasos entre acciones:** El script incluye pausas para evitar que se marque como actividad sospechosa.
-- **Mensajes en consola:** El progreso del script se muestra en la consola, incluyendo los canales procesados, éxitos y fallos.
-- **Limitaciones:** Si tienes demasiadas suscripciones, puede ser necesario desplazarte hacia abajo en la página para cargar todos los canales antes de ejecutar el script.
-
-## ⚠️ Advertencias
-
-- Este script interactúa con el DOM de YouTube y podría dejar de funcionar si se realizan cambios en la estructura de la página.
-- Úsalo bajo tu propia responsabilidad. Este tipo de manipulación puede no cumplir con los términos de servicio de YouTube.
-
-## ✨ Créditos
-
-Desarrollado para simplificar la gestión de suscripciones en YouTube.
-```
