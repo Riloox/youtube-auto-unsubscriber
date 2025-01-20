@@ -21,6 +21,9 @@ This script automates the process of unsubscribing from YouTube channels when yo
 - Access to your YouTube account
 - Basic knowledge of using browser developer tools
 
+## Installation
+
+No installation required! This is a browser console script.
 
 ## Usage
 
@@ -30,8 +33,9 @@ This script automates the process of unsubscribing from YouTube channels when yo
    - Windows/Linux: Press `F12` or `Ctrl + Shift + I`
    - macOS: Press `Cmd + Option + I`
    - Or right-click anywhere on the page and select "Inspect" then click on "Console"
-   
-4. Copy and paste the entire script into the console:
+4. Copy and paste the following script into the console:
+
+```javascript
 // Function to unsubscribe from a channel
 async function unsubscribeFromChannel(button) {
     // Click the subscribe button to open the menu
@@ -79,6 +83,8 @@ async function massUnsubscribe() {
 
 // Start the unsubscription process
 massUnsubscribe().catch(console.error);
+```
+
 5. Press Enter to run the script
 
 ## How It Works
@@ -124,5 +130,3 @@ Feel free to fork this repository and submit pull requests for any improvements 
 ## License
 
 This project is licensed under the MIT License - feel free to use it for any purpose.
-
-## 
