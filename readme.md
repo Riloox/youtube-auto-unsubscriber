@@ -1,6 +1,5 @@
 ### `README.md`
 
-```markdown
 # Script de Anulación Masiva de Suscripciones en YouTube
 
 Este script en JavaScript permite anular suscripciones de manera masiva en YouTube mediante la manipulación del DOM en el navegador. Es ideal para limpiar tu lista de suscripciones de forma rápida y eficiente.
@@ -104,7 +103,6 @@ async function massUnsubscribe() {
 console.log('Iniciando proceso de anulación masiva de suscripciones...');
 massUnsubscribe().catch(error => console.error('Error fatal:', error));
 ```
-
 5. Presiona `Enter` para iniciar el proceso.
 
 El script buscará automáticamente todos los canales en la página y anulará suscripciones de manera secuencial.
@@ -123,4 +121,3 @@ El script buscará automáticamente todos los canales en la página y anulará s
 ## ✨ Créditos
 
 Desarrollado para simplificar la gestión de suscripciones en YouTube.
-```
