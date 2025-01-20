@@ -79,10 +79,10 @@ async function massUnsubscribe() {
         
         if (success) {
             successCount++;
-            console.log(`✅ Anulada suscripción de: ${channelName}`);
+            console.log(`�?Anulada suscripción de: ${channelName}`);
         } else {
             failCount++;
-            console.log(`❌ Error al anular suscripción de: ${channelName}`);
+            console.log(`�?Error al anular suscripción de: ${channelName}`);
         }
         
         // Wait between unsubscriptions to avoid overwhelming YouTube
@@ -117,7 +117,3 @@ El script buscará automáticamente todos los canales en la página y anulará s
 
 - Este script interactúa con el DOM de YouTube y podría dejar de funcionar si se realizan cambios en la estructura de la página.
 - Úsalo bajo tu propia responsabilidad. Este tipo de manipulación puede no cumplir con los términos de servicio de YouTube.
-
-## ✨ Créditos
-
-Desarrollado para simplificar la gestión de suscripciones en YouTube.
